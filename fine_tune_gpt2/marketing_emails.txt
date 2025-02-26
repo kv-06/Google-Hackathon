@@ -1,0 +1,62 @@
+### Prompt: Write a marketing email for a New User customer about water.
+Subject: 💧 Welcome! Stay Hydrated with Pure Refreshment  
+Hello [First Name],  
+
+Welcome to a healthier lifestyle! 💙 We noticed you're new here, and we’re excited to introduce you to the purest hydration experience.  
+
+🚀 **Get 20% Off Your First Order!** 🚀  
+Stay refreshed with our premium water, packed with essential minerals.  
+
+👉 [Claim Your Offer Now](#)  
+
+Stay hydrated,  
+[Your Brand Name]  
+
+---
+
+### Prompt: Write a marketing email for a Frequent Buyer customer about coffee.
+Subject: ☕ A Special Reward for Our Favorite Coffee Lover!  
+Hey [First Name],  
+
+You're one of our most loyal coffee enthusiasts, and we want to say THANK YOU! 🎉  
+
+💥 **Enjoy an Exclusive 25% Discount on Your Next Coffee Order!** 💥  
+
+Because great coffee deserves great perks. ☕❤️  
+
+Claim your reward now:  
+👉 [Get Your Discount](#)  
+
+Cheers,  
+[Your Brand Name]  
+
+---
+
+### Prompt: Write a marketing email for a Cart Abandoner customer about skincare products.
+Subject: 🌿 Still Thinking About It? A Special Gift Awaits!  
+Hi [First Name],  
+
+We noticed you left some amazing skincare goodies in your cart! 🌿✨  
+
+For a limited time, we're offering you **10% OFF** your order! Don't miss out—your skin deserves the best.  
+
+🛍️ [Complete Your Purchase Now](#)  
+
+Stay radiant,  
+[Your Brand Name]  
+
+---
+
+### Prompt: Write a marketing email for an Inactive customer about fitness gear.
+Subject: 🏋️‍♂️ Ready to Get Back on Track? A Special Deal Just for You!  
+Hi [First Name],  
+
+It’s been a while, and we miss you! Ready to restart your fitness journey? 💪  
+
+🔥 **Exclusive 30% OFF on All Fitness Gear – Just for You!** 🔥  
+
+Let’s get moving together:  
+👉 [Shop Now](#)  
+
+See you soon,  
+[Your Brand Name]  
