@@ -22,7 +22,7 @@ This project is a Flask-based web application that predicts customer segments ba
 git clone https://github.com/your-username/your-repository.git
 cd your-repository
 ```
-###2. Install Dependencies
+### 2. Install Dependencies
 Run the following command to install all required libraries:
 
 ```bash
