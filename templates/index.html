@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Segmentation & AI Email Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        form {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        label {
+            font-weight: bold;
+            width: 40%;
+            text-align: left;
+        }
+        input {
+            padding: 10px;
+            width: 50%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 90%;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .email-box { text-align: left; padding: 20px; background: white; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); }
+
+    </style>
+</head>
+<body>
+    <h1>Customer Segmentation & AI Email Generator</h1>
+
+    <form method="POST">
+        <div class="form-group">
+            <label for="days_since_last_visit">Days Since Last Visit:</label>
+            <input type="number" id="days_since_last_visit" name="days_since_last_visit" value="{{ request.form['days_since_last_visit'] if request.form.get('days_since_last_visit') else '' }}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="total_purchases">Total Purchases:</label>
+            <input type="number" id="total_purchases" name="total_purchases" value="{{ request.form['total_purchases'] if request.form.get('total_purchases') else '' }}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="no_of_items_in_cart">No. of Items in Cart:</label>
+            <input type="number" id="no_of_items_in_cart" name="no_of_items_in_cart" value="{{ request.form['no_of_items_in_cart'] if request.form.get('no_of_items_in_cart') else '' }}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="frequency_of_visits">Frequency of Visits:</label>
+            <input type="number" id="frequency_of_visits" name="frequency_of_visits" value="{{ request.form['frequency_of_visits'] if request.form.get('frequency_of_visits') else '' }}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="purchase_frequency">Purchase Frequency:</label>
+            <input type="number" id="purchase_frequency" name="purchase_frequency" step="0.01" value="{{ request.form['purchase_frequency'] if request.form.get('purchase_frequency') else '' }}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="cart_value">Cart Value:</label>
+            <input type="number" id="cart_value" name="cart_value" value="{{ request.form['cart_value'] if request.form.get('cart_value') else '' }}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="time_spent_on_site">Time Spent on Site (mins):</label>
+            <input type="number" id="time_spent_on_site" name="time_spent_on_site (mins)" value="{{ request.form['time_spent_on_site (mins)'] if request.form.get('time_spent_on_site (mins)') else '' }}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="discount_activity">Discount Activity (1 for Yes, 0 for No):</label>
+            <input type="number" id="discount_activity" name="discount_activity" value="{{ request.form['discount_activity'] if request.form.get('discount_activity') else '' }}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="product">Product to Advertise:</label>
+            <input type="text" id="product" name="product" value="{{ request.form['product'] if request.form.get('product') else '' }}" required>
+        </div>
+
+        <button type="submit">Predict & Generate Email</button>
+    </form>
+
+    {% if prediction %}
+        <h3>Prediction: {{ prediction }}</h3>
+        <div class="email-box">
+            {{ email_content | safe }}
+        </div>
+    {% endif %}
+</body>
+</html>
