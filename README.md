@@ -19,8 +19,8 @@ This project is a Flask-based web application that predicts customer segments ba
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/your-repository.git
-cd your-repository
+git clone https://github.com/kv-06/Google-Hackathon.git
+cd Google-Hackathon
 ```
 ### 2. Install Dependencies
 Run the following command to install all required libraries:
